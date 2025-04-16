@@ -1,0 +1,70 @@
+#myVideo {
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    transition: bottom 1s;
+}
+
+.fa-expand {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: orangered;
+    z-index: 1;
+}
+
+p {
+    font-family: "Martian Mono", monospace;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+.fa-expand:hover {
+    cursor: pointer;
+}
+
+section { position: absolute; z-index: 1; top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);}
+#line1 { bottom: 50%; left: 50%; }
+#line2 { bottom: 0%; left: 0%; }
+#line3 { bottom: 0%; left: 0%; }
+#line4 { bottom: 0%; left: 0%; }
+#line5 { bottom: 0%; left: 0%; }
+#line6 { bottom: 0%; left: 0%; }
+#line7 { bottom: 0%; left: 0%; }
+#line8 { bottom: 0%; left: 0%; }
+#line9 { bottom: 0%; left: 0%; }
+
+#img1 { 
+    width: 100vw; 
+    height: 100vh; 
+    background-image: url(images/Sticky1.svg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+.hidden { opacity: 0; display: none; }
+.showing { opacity: 1; }
+
+@media screen and (min-width: 900px) {
+    #myVideo {
+        bottom: -50%;
+    }
+} 
+
+@media screen and (min-width: 1100px) {
+    #myVideo {
+        bottom: -80%;
+    }
+} 
