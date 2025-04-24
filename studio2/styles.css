@@ -3,11 +3,19 @@
 :root{
     --poster-width: 100px;
     --films-row: 3;
+    --gap: 20px;
 }
 
-body {
-    background-color: rgb(46, 36, 59);
+html {
+    background: #020024;
+    background: linear-gradient(3deg, rgba(2, 0, 36, 1) 0%, rgba(27, 27, 74, 1) 39%, rgba(36, 77, 87, 1) 95%);
+    min-height: 100%;
 }
+
+/* body {
+    background: #020024;
+} */
+    
 
 h1, h2, h3, h4, p {
     color: white;
@@ -30,10 +38,14 @@ header {
     height: 200px;
 }
 
+main {
+    height: max-content;
+}
+
 .film-container {
     display: flex;
-    gap: 20px;
-    width: calc(var(--films-row) * var(--poster-width) + 20px * (var(--films-row) - 1));
+    gap: var(--gap);
+    width: calc(var(--films-row) * var(--poster-width) + var(--gap) * (var(--films-row) - 1));
     flex-wrap: wrap;
     margin: auto;
 }
@@ -45,6 +57,10 @@ main {
 .film {
     position: relative;
     margin-bottom: 10px;
+}
+
+.film:last-of-type{
+    margin-bottom: 50px;
 }
 
 .film > p {
@@ -68,7 +84,7 @@ main {
 .date {
     width: 30px;
     height: 30px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px 0 15px 0;
     display: flex;
     justify-content: center;
@@ -80,10 +96,11 @@ main {
 .month {
     text-transform: uppercase;
     position: absolute;
-    top: -25px;
-    font-size: 10pt;
-    letter-spacing: 10%;
-    font-weight: 400;
+    top: -20px;
+    font-size: 9pt;
+    letter-spacing: 2px;
+    font-weight: 600;
+    opacity: 80%;
 }
 
 .date > p {
@@ -106,8 +123,8 @@ main {
 }
 
 .fa-star {
-    color: #5B3115;
-    filter:drop-shadow(0px 1px 1px rgb(255, 255, 255)) drop-shadow(0px -1px 0px rgb(12, 5, 0));
+    color: #aa983e;
+    filter: drop-shadow(0px -1px 0px rgb(12, 5, 0)) drop-shadow(0px 1px 1px rgb(255, 255, 255));
     /* , drop-shadow(0px 1px 1px 0px rgba(0, 0, 0, 0.50) inset); */
 }
 
@@ -116,3 +133,30 @@ main {
     font-size: large;
 }
 
+@media screen and (min-width: 600px) {
+    :root{
+        --poster-width: 100px;
+        --films-row: 4;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    :root{
+        --poster-width: 100px;
+        --films-row: 5;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    :root{
+        --poster-width: 100px;
+        --films-row: 7;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    :root{
+        --poster-width: 100px;
+        --films-row: 8;
+    }
+}

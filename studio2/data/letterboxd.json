@@ -134,6 +134,15 @@
             "userRating": 1,
             "watchdate": "2025-04-06",
             "service": "Theater"
+        },
+        {
+            "name": "Sinners",
+            "director": "Ryan Coogler",
+            "year": 2025,
+            "rating": 4.3,
+            "userRating": 5,
+            "watchdate": "2025-04-22",
+            "service": "Theater"
         }
     ]
 }
