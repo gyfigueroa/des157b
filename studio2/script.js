@@ -34,19 +34,23 @@
         //console.log(month);
         //console.log(day);
         let html = `<div class="film" >
-                        <div class="poster" style="background-image: url('images/${currentTitle}.jpg')"">
-                            <div class="date">
-                                <p>${day}</p>
-                            </div>`;
+                        <div class="poster-container">
+                            <div class="poster" style="background-image: url('images/${currentTitle}.jpg')"">
+                                <div class="date">
+                                    <p>${day}</p>
+                                </div>`;
         if (film.userRating > film.rating){
-            html += `<div class="star"><i class="fa-solid fa-star"></i></div>`;
+            html +=             `<div class="star"><i class="fa-solid fa-star"></i></div>`;
         }
         if (currentMonth != month){
-            html += `<h3 class="month">${month}</h3>`;
+            html +=             `<h3 class="month">${month}</h3>`;
             currentMonth = month;
         }
-        html += `</div>
+        html +=             `</div>
+                            <div class="poster-bg" style="background-image: url('images/${currentTitle}.jpg')"></div>
+                        </div>
                     <p class="title">${film.name}, ${film.year}</p>
+                    
                 </div>`
 
         const wrapper = document.createElement('div');

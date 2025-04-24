@@ -25,10 +25,6 @@ h1 {
     font-family: "Wittgenstein", serif;
 }
 
-
-
-
-
 header {
     margin: auto;
     display: flex;
@@ -57,7 +53,10 @@ main {
 .film {
     position: relative;
     margin-bottom: 10px;
+
 }
+
+
 
 .film:last-of-type{
     margin-bottom: 50px;
@@ -71,7 +70,7 @@ main {
     max-width: var(--poster-width);
 }
 .poster {
-    /* background-image: url("images/mad-max-fury-road.jpg"); */
+    background-image: url("images/mad-max-fury-road.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: var(--poster-width);
@@ -79,6 +78,38 @@ main {
     aspect-ratio: 2/3;
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.poster-bg {
+    background-image: url("images/mad-max-fury-road.jpg");
+    background-size: cover;
+    width: var(--poster-width);
+    height: auto;
+    aspect-ratio: 2/3;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transition: all 1s;
+}
+
+
+
+.poster-container{
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+.poster-container:hover{
+    transform: scale(110%);    
+}
+
+.poster-container:hover > .poster-bg {
+    filter:blur(10px) saturate(3);
+}
+
+.poster-container:hover > .poster > .month {
+    opacity: 100%;
 }
 
 .date {
@@ -100,7 +131,8 @@ main {
     font-size: 9pt;
     letter-spacing: 2px;
     font-weight: 600;
-    opacity: 80%;
+    opacity: 70%;
+    transition: all 1s;
 }
 
 .date > p {
