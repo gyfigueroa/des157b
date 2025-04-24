@@ -1,0 +1,139 @@
+{
+    "films":[
+        {
+            "name": "Mad Max: Fury Road",
+            "director": "George Miller",
+            "year": 2015,
+            "rating": 4.2,
+            "userRating": 4,
+            "watchdate": "2025-01-03",
+            "service": "Netflix"
+        },
+        {
+            "name": "Nosferatu",
+            "director": "Robert Eggers",
+            "year": 2024,
+            "rating": 3.7,
+            "userRating": 4,
+            "watchdate": "2025-01-04",
+            "service": "Theater"
+        },
+        {
+            "name": "Gladiator",
+            "director": "Ridley Scott",
+            "year": 2000,
+            "rating": 4.1,
+            "userRating": 4,
+            "watchdate": "2025-01-04",
+            "service": "Paramount+"
+        },
+        {
+            "name": "Arrival",
+            "director": "Dennis Villenueve",
+            "year": 2016,
+            "rating": 4.1,
+            "userRating": 5,
+            "watchdate": "2025-01-11",
+            "service": "Paramount+"
+        },
+        {
+            "name": "Inception",
+            "director": "Christopher Nolan",
+            "year": 2010,
+            "rating": 4.2,
+            "userRating": 4.5,
+            "watchdate": "2025-01-19",
+            "service": "Netflix"
+        },
+        {
+            "name": "Dune: Part Two",
+            "director": "Dennis Villenueve",
+            "year": 2024,
+            "rating": 4.4,
+            "userRating": 5,
+            "watchdate": "2025-02-14",
+            "service": "Netflix"
+        },
+        {
+            "name": "Conclave",
+            "director": "Edward Berger",
+            "year": 2024,
+            "rating": 3.9,
+            "userRating": 4,
+            "watchdate": "2025-02-15",
+            "service": "Rental"
+        },
+        {
+            "name": "We Live in Time",
+            "director": "John Crowley",
+            "year": 2024,
+            "rating": 3.7,
+            "userRating": 3.5,
+            "watchdate": "2025-02-19",
+            "service": "Max"
+        },
+        {
+            "name": "Conclave",
+            "director": "Edward Berger",
+            "year": 2024,
+            "rating": 3.9,
+            "userRating": 4.5,
+            "watchdate": "2025-02-28",
+            "service": "Rental"
+        },
+        {
+            "name": "Anora",
+            "director": "Sean Baker",
+            "year": 2024,
+            "rating": 3.9,
+            "userRating": 4,
+            "watchdate": "2025-03-02",
+            "service": "Rental"
+        },
+        {
+            "name": "Dallas Buyers Club",
+            "director": "Jean-Marc Vallée",
+            "year": 2013,
+            "rating": 4.0,
+            "userRating": 4.5,
+            "watchdate": "2025-03-03",
+            "service": "Netflix"
+        },
+        {
+            "name": "Nickel Boys",
+            "director": "RaMell Ross",
+            "year": 2024,
+            "rating": 4.0,
+            "userRating": 4,
+            "watchdate": "2025-03-07",
+            "service": "Rental"
+        },
+        {
+            "name": "Smile 2",
+            "director": "Parker Finn",
+            "year": 2024,
+            "rating": 3.3,
+            "userRating": 4,
+            "watchdate": "2025-03-22",
+            "service": "Paramount+"
+        },
+        {
+            "name": "Death of a Unicorn",
+            "director": "Alex Scharfman",
+            "year": 2025,
+            "rating": 2.9,
+            "userRating": 4.5,
+            "watchdate": "2025-03-28",
+            "service": "Theater"
+        },
+        {
+            "name": "A Minecraft Movie",
+            "director": "Jared Hess",
+            "year": 2025,
+            "rating": 2.7,
+            "userRating": 1,
+            "watchdate": "2025-04-06",
+            "service": "Theater"
+        }
+    ]
+}
