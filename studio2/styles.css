@@ -25,6 +25,12 @@ h1 {
     font-family: "Wittgenstein", serif;
 }
 
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
 header {
     margin: auto;
     display: flex;

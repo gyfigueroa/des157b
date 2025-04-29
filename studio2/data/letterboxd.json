@@ -143,6 +143,15 @@
             "userRating": 5,
             "watchdate": "2025-04-22",
             "service": "Theater"
+        },
+        {
+            "name": "Conclave",
+            "director": "Edward Berger",
+            "year": 2024,
+            "rating": 3.9,
+            "userRating": 4.5,
+            "watchdate": "2025-04-26",
+            "service": "Prime"
         }
     ]
 }
