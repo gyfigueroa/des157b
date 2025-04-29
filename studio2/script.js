@@ -35,6 +35,7 @@
         //console.log(day);
         let html = `<div class="film" >
                         <div class="poster-container">
+                            <a href="https://www.google.com/search?q=${film.name}" target="_blank" rel=”noopener noreferrer”>
                             <div class="poster" style="background-image: url('images/${currentTitle}.jpg')"">
                                 <div class="date">
                                     <p>${day}</p>
@@ -47,6 +48,7 @@
             currentMonth = month;
         }
         html +=             `</div>
+                            </a>
                             <div class="poster-bg" style="background-image: url('images/${currentTitle}.jpg')"></div>
                         </div>
                     <p class="title">${film.name}, ${film.year}</p>

@@ -129,6 +129,10 @@ main {
     backdrop-filter: blur(10px);
 }
 
+a {
+    text-decoration: none;
+}
+
 
 .month {
     text-transform: uppercase;
