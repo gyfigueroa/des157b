@@ -4,10 +4,7 @@
 }
 
 .landing {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     position: relative;
     overflow-x: hidden;
 }
@@ -18,6 +15,16 @@ p {
 
 .landing p {
     text-align: center;
+}
+
+.headlinecontainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    
 }
 
 h1 {
@@ -87,7 +94,7 @@ h1 {
 }
 
 .tweet {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     display: flex;
@@ -98,6 +105,11 @@ h1 {
     border: 1px solid gray;
     max-width: 400px;
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.25);
+}
+
+.tweet:nth-child(2){
+    top: 3%;
+    left: 3%;
 }
 
 .tweet:nth-child(3){
@@ -112,7 +124,7 @@ h1 {
 
 .tweet:nth-child(5){
     top: 10%;
-    left: 3%;
+    left: 10%;
 }
 
 .tweet:nth-child(6){
@@ -148,6 +160,21 @@ h1 {
 .tweet:nth-child(11){
     top: 2%;
     left: 20%;
+}
+
+
+.tweetAnchors {
+    margin-top: 1000px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.anchor {
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
 }
 
 
