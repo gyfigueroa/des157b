@@ -19,14 +19,14 @@
     function loadBubbles(){
         bubbles.forEach(bubble => {
             bubble.style.background = getRandomElement(colors);
-            bubble.style.filter =  `blur(${getRandomInt(40,70)})`;
+            bubble.style.filter =  `blur(${getRandomInt(40,80)})`;
             bubble.style.width = `${getRandomInt(150,250)}px`
             for (const child of bubble.children){
                 child.style.width = `${getRandomInt(70,100)}px`;
                 child.style.top = `${getRandomInt(10,90)}%`;
                 child.style.left = `${getRandomInt(10,90)}%`;
                 child.style.background = getRandomElement(colors);
-                child.style.filter =  `blur(${getRandomInt(35,100)})`;
+                child.style.filter =  `blur(${getRandomInt(35,150)})`;
             }
         });
     }

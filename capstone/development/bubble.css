@@ -11,7 +11,7 @@ main {
 .bubble{
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: none;
+    background: white;
     opacity: 70%;
     mix-blend-mode: soft-light;
     transition: all 2s ease-in-out;
@@ -20,13 +20,14 @@ main {
 .main {
     width: 200px;
     position: relative;
+    background: white;
     filter: blur(10px); /* 5px - 20px */
 }
 
 .mini {
     width: 50px;  /* 50px - 100px */
     position:absolute;
-    background: none; 
+    background: white; 
     transform: translate(-50%, -50%);
     top: 50%; /* 10% - 90% */
     left: 50%; /* 10% - 90% */
