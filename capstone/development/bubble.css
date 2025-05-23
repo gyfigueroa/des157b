@@ -15,6 +15,7 @@ main {
     opacity: 70%;
     mix-blend-mode: soft-light;
     transition: all 2s ease-in-out;
+    filter: blur(10px);
 }
 
 .main {
