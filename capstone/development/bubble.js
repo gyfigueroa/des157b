@@ -3,7 +3,7 @@
     let colors = ["#d741a7", "#3a1772", "#5398be", "#f2cd5d", "#dea54b", "#1446a0", "#db3069", "#ebebd3", "#a4036f", "#048ba8", "#16db93", "#efea5a", "#f29e4c", "#ef2d56", "#ed7d3a", "#8cd867", "#2fbf71"];
     
     let bubbles = document.querySelectorAll(".main");
-    console.log(bubbles);
+    //console.log(bubbles);
 
     function getRandomElement(array){
         let randomIndex = Math.floor(Math.random() * array.length);
@@ -31,6 +31,6 @@
         });
     }
     loadBubbles();
-    setInterval(loadBubbles, 3500)();
+    setInterval(loadBubbles, 2000);
     
 })()
