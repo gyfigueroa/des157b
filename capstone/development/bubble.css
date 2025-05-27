@@ -5,7 +5,6 @@ main {
     justify-content: space-evenly;
     height: 100vh;
     transform: scale(0.7);
-    
 }
 
 .bubble{
@@ -14,15 +13,18 @@ main {
     background: white;
     opacity: 70%;
     mix-blend-mode: soft-light;
-    transition: all 2s ease-in-out;
-    filter: blur(10px);
+    transition: all 3s;
+    filter: blur(0px); /* 5px - 20px */
+    transition-timing-function: cubic-bezier(0.8, -0.4, 0.5, 1);
+    
 }
 
 .main {
     width: 200px;
     position: relative;
     background: white;
-    filter: blur(10px); /* 5px - 20px */
+    filter: blur(15px);
+
 }
 
 .mini {
@@ -32,8 +34,8 @@ main {
     transform: translate(-50%, -50%);
     top: 50%; /* 10% - 90% */
     left: 50%; /* 10% - 90% */
-    backdrop-filter: blur(20px);
-    filter: blur(5px); /* 5px - 20px */
+    backdrop-filter: blur(30px);
+    
     z-index: 1;
 }
 
