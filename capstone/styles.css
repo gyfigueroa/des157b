@@ -14,17 +14,29 @@ body {
 }
 
 p {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-a {
+/* a {
     font-family: Helvetica, Arial, sans-serif;
     color: white;
     font-size: 9pt;
-}
+} */
 
 .wrapper {
     all: none;
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
 }
 
 .landing p {
@@ -107,12 +119,48 @@ h1 {
 }
 
 .pfp {
-    width: auto;
+    width: 40px;
     height: 40px;
     background-color: gray;
     border-radius: 50%;
     aspect-ratio: 1;
     background-size: contain;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background-color: #ffffff00;
+    backdrop-filter: blur(20px);
+    box-sizing: border-box;
+    box-shadow: rgb(255 255 255 / 5%) 10px 10px 43px 0px inset, rgb(0 0 0 / 5%) 10px 10px 23px 10px, rgb(255 255 255 / 50%) 2px 2px 50px -3px inset, rgb(0 0 0 / 50%) 2px 2px 10px -3px inset;
+    overflow: hidden;
+}
+
+.quote-pfp {
+    width: 32px;
+    height: 32px;
+    background-color: gray;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background-size: contain;
+}
+
+.quote-user {
+    display: flex;
+    gap: 4px;
+    padding: 16px;
+    align-items: center;
+}
+
+.quote-image {
+    width: 100%;
+    aspect-ratio: auto;
+    background-size: cover;
+    display: inline-block;
+    aspect-ratio: 3/2;
+    object-fit: cover; 
 }
 
 .image {

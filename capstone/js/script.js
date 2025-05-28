@@ -48,40 +48,54 @@ function updateInterface(json){
 
 
 function formatTweet(tweet, json){
-    let html = `<a class="wrapper" href="${json.URL}">
-                    <div class="pfp" style="background-image:  url(${json.pfpURL})"></div>
-                    <div class="content">                
-                        <div class="user">
-                            <p class="name">${json.displayname}</p>
-                            <p class="username">${json.username}</p>
-                            <p class="username">• ${json.date}</p>
+    let html = `<div class="pfp" style="background-image:  url(${json.pfpURL})"></div>
+                <div class="content">                
+                    <div class="user">
+                        <p class="name">${json.displayname}</p>
+                        <p class="username">${json.username}</p>
+                        <p class="username">• ${json.date}</p>
+                    </div>
+                    
+                    <p>${json.content}</p>`
+    if (json.imgURL && json.imgURL != ""){
+        html +=    `<img class="image" src="${json.imgURL}">`;
+    }
+    
+    if (json.quote){
+        html +=    `<div class="quote">
+                        <div class="quote-user">
+                            <div class="quote-pfp" style="background-image:  url(${json.quote.pfpURL})"></div>
+                            <p class="name">${json.quote.displayname}</p>
+                            <p class="username">${json.quote.username}</p>
+                            <p class="username">• ${json.quote.date}</p>
                         </div>
-                        
-                        <p>${json.content}</p>
-                        <img class="image" src="${json.imgURL}">
-                        
-                        <div class="stats">
-                            <div class="stat comments">
-                                <i class="fa-regular fa-comment"></i>
-                                <p>${json.comments}</p>
-                            </div>
-                            <div class="stat quotes">
-                                <i class="fa-solid fa-retweet"></i>
-                                <p>${json.quotes}</p>
-                            </div>
-                            <div class="stat likes">
-                                <i class="fa-regular fa-heart"></i>
-                                <p>${json.likes}</p>
-                            </div>
-                            <div class="stat views">
-                                <i class="fa-solid fa-chart-simple"></i>
-                                <p>${json.views}</p>
-                            </div>
+                        <img class="quote-image" src="${json.quote.imgURL}">
+                    </div>`;
+    }
+                    
+    html +=        `<div class="stats">
+                        <div class="stat comments">
+                            <i class="fa-regular fa-comment"></i>
+                            <p>${json.comments}</p>
+                        </div>
+                        <div class="stat quotes">
+                            <i class="fa-solid fa-retweet"></i>
+                            <p>${json.quotes}</p>
+                        </div>
+                        <div class="stat likes">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>${json.likes}</p>
+                        </div>
+                        <div class="stat views">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <p>${json.views}</p>
                         </div>
                     </div>
-                </a>`
-    tweet.innerHTML = "";
+                </div>`;
+    //tweet.innerHTML = "";
     tweet.innerHTML = html;
+    //<a class="wrapper" href="${json.URL}"></a>
+    //</a>
     console.log(json.displayname, json.imgURL);
 
 
