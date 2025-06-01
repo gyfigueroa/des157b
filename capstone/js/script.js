@@ -1,3 +1,4 @@
+console.log("js loaded");
 let globalData;
 async function getData(){
         const myMoods = await fetch('./tweets.json');
@@ -34,16 +35,31 @@ function qs(query){
     return document.querySelector(query);
 }
 
+
+
 function updateInterface(json){
-    let tweets = qsa(".tweet");
-    for (let i = 0; i < tweets.length; i++){
-        if (json[i]){
+    for(let i = 0; i < tweets.length; i++){
+        if(json[i]){
             formatTweet(tweets[i], json[i]);
         }
     }
 }
 
+/* 
+Version for specific tweets
 
+
+let jsonIndex = [6, 7, 9];
+
+function updateInterface(json){
+    let tweets = qsa(".tweet");
+    for (let i = 0; i < tweets.length; i++){
+        if (json[i]){
+            formatTweet(tweets[i], json[jsonIndex[i]]);
+        }
+    }
+}
+*/
 
 
 
