@@ -154,7 +154,7 @@ function formatTweet(tweet, json){
 */
 }
 
-let landingTweets = qs(".section0").querySelectorAll('.tweet');
+let landingTweets = qs("section").querySelectorAll('.tweet');
 
 function hideLandingTweets(){
     for (let i = 0; i < landingTweets.length; i++){
@@ -178,7 +178,7 @@ let bubbles = qs(".background").querySelectorAll(".main");
 
 // toggling landing tweets
 enterView({
-        selector: '#slide2',
+        selector: '#sec3',
         enter: function(el) {
             console.log("enter", el);
             hideLandingTweets();
@@ -243,7 +243,7 @@ enterView({
 });
 
 enterView({
-    selector: "#slide4",
+    selector: "#sec5",
     enter: function(){
         for (let i = 0; i < bubbles.length; i++ ){
             if(i == bubbles.length-1){
@@ -264,4 +264,29 @@ enterView({
     offset: 0,
     once: false,
 });
+
+enterView({
+    selector: "#s6-2",
+    enter: function(){
+        for (let i = 0; i < bubbles.length; i++ ){
+            bubbles[i].style.borderRadius = "50%";
+            bubbles[i].style.transform = "scale(1)";
+        };
+    },
+    exit: function(){
+        for (let i = 0; i < bubbles.length; i++ ){
+            if(i == bubbles.length-1){
+                bubbles[i].style.borderRadius = "0";
+                bubbles[i].style.transform = "scale(10)";
+            }
+            else {
+                bubbles[i].style.transform = "scale(0)";
+            }
+        };
+    },
+    offset:0,
+    once: false,
+});
+
+
 

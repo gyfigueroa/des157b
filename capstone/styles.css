@@ -281,15 +281,15 @@ footer {
 
 /* LAYOUT */
 
-.section {
-    display: flex;
+section {
     padding: 2em 0;
+    position: relative;
 } 
 
-#slide1{
+
+
+section:nth-child(2){
     background-color: aqua;
-    justify-content: center;
-    position: relative;
 }
 
 .scrolly-side{
@@ -326,10 +326,13 @@ h1.sticky{
 }
 
 
-#slide2{
+section:nth-child(3){
     background-color: aquamarine;
-    min-width: 100vw;
     min-height: 100vh;
+    place-content: center;
+}
+
+.section-container:nth-child(3){
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -358,11 +361,8 @@ h1.sticky{
 }
 
 
-/* SLIDE 3 THE GORILLA PROBLEM */
+/* SLIDE 4 THE GORILLA PROBLEM */
 
-#slide3{
-    
-}
 
 .headline2{
     margin-top: 3em;
@@ -408,44 +408,155 @@ img {
 }
 
 
-/* SLIDE 4 */
+/* Section 5 */
 
-#slide4 {
-    justify-content: center;
-    position: relative;
+
+/* Section 6 */
+
+.transition{
+    width: 100%;
+    height: 20vh;
+background: linear-gradient(0deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 0) 100%);}
+
+#sec6 {
+    background-color: #2A7B9B;
 }
 
-#s4-2 {
-    position: sticky;
-    top: 10vh;
-    left: 0;
-}
-
-/* SLIDE 5 */
-
-#slide5 > .scrolly > h1 {
+#sec6 > .section-container > .scrolly > h1 {
     margin-top: 50vh;
 }
 
-#s5-1{
+#s6-1{
     top: calc(20vh + 44pt);
+    margin-bottom: calc(44pt * 5);
+    
 }
 
-#s5-2{
+#s6-2{
     top: calc(20vh + 88pt);
+    margin-bottom: calc(44pt * 4);
 }
 
-#s5-3{
+#s6-3{
     top: calc(20vh + 132pt);
+    margin-bottom: calc(44pt * 3);
 }
 
-#s5-4{
+#s6-4{
     top: calc(20vh + 176pt);
+    margin-bottom: calc(44pt * 2);
 }
 
-#s5-5{
+#s6-5{
     top: calc(20vh + 220pt);
+    margin-bottom: calc(44pt * 1);
 }
 
+/* SECTION 7 */
+
+#sec7 {
+
+}
+
+.timeline {
+    width: 100%;
+    height: 200vh;
+    position: relative;
+}
+
+.timeline-event{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 32px;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 6px -6px rgba(255,255,255,1) inset, -6px -6px 16px -16px rgba(69, 69, 69, 0.75) inset, 6px 6px 23px -7px rgba(0,0,0,0.5);
+}
+
+.timeline-event > img {
+    width: 100%;
+    height: 50px;
+}
+
+.year {
+    font-size: 32pt;
+    font-weight: 900;
+    background-color: #c9a9a9;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.timeline-event > .description {
+    margin-bottom: 16px;
+}
+
+.timeline-event:nth-child(2){
+    top: 5%;
+    left: 50%;
+}
+
+.timeline-event:nth-child(3){
+    top: 15%;
+    left: 10%;
+}
+
+.timeline-event:nth-child(4){
+    top: 20%;
+    right: 0%;
+}
+
+.timeline-event:nth-child(5){
+    top: 30%;
+    left: 0;
+}
+
+.timeline-event:nth-child(6){
+    top: 35%;
+    left: 40%;
+}
+
+.timeline-event:nth-child(7){
+    top: 48%;
+    right: 0%;
+}
+
+.timeline-event:nth-child(8){
+    top: 50%;
+    left: 20%;
+}
+
+.timeline-event:nth-child(9){
+    top: 63%;
+    left: 0%;
+}
+
+.timeline-event:nth-child(10){
+    top: 65%;
+    left: 40%;
+}
+
+.timeline-event:nth-child(11){
+    top: 75%;
+    left: 47%;
+}
+
+.timeline-event:nth-child(12){
+    top: 80%;
+    left: 0%;
+}
+
+.timeline-event:nth-child(13){
+    bottom: 0;
+    right: 0;
+}
 
 
