@@ -148,7 +148,120 @@ function formatTweet(tweet, json){
             </div>
         </div>
     </div> 
+
+
     
 */
 }
+
+let landingTweets = qs(".section0").querySelectorAll('.tweet');
+
+function hideLandingTweets(){
+    for (let i = 0; i < landingTweets.length; i++){
+        if (!landingTweets[i].classList.contains("hidden")){
+            console.log(`hiding tweet`);
+            landingTweets[i].classList = "tweet hidden";
+        }
+    }
+}
+
+function showLandingTweets(){
+    for (let i = 0; i < landingTweets.length; i++){
+        if (!landingTweets[i].classList.contains("visible")){
+            console.log(`showing tweet`);
+            landingTweets[i].classList = "tweet visible";
+        }
+    }
+}
+
+let bubbles = qs(".background").querySelectorAll(".main");
+
+// toggling landing tweets
+enterView({
+        selector: '#slide2',
+        enter: function(el) {
+            console.log("enter", el);
+            hideLandingTweets();
+        },
+        exit: function(el) {
+            console.log("exit", el);
+            showLandingTweets();
+            AOS.refresh();
+        },
+        offset: 0, // enter at middle of viewport
+        once: false, // trigger just once
+    });
+
+
+
+enterView({
+    selector: "#gorilla-card",
+    enter: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(1)";
+        });
+    },
+    exit: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(0)";
+        });
+    },
+    offset: 0,
+    once: false,
+});
+
+enterView({
+    selector: "#human-card",
+    enter: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(2)";
+        });
+    },
+    exit: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(1)";
+        });
+    },
+    offset: 0,
+    once: false,
+});
+
+enterView({
+    selector: "#ai-card",
+    enter: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(3)";
+        });
+    },
+    exit: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(2)";
+        });
+    },
+    offset: 0,
+    once: false,
+});
+
+enterView({
+    selector: "#slide4",
+    enter: function(){
+        for (let i = 0; i < bubbles.length; i++ ){
+            if(i == bubbles.length-1){
+                bubbles[i].style.borderRadius = "0";
+                bubbles[i].style.transform = "scale(10)";
+            }
+            else {
+                bubbles[i].style.transform = "scale(0)";
+            }
+        };
+    },
+    exit: function(){
+        for (let i = 0; i < bubbles.length; i++ ){
+            bubbles[i].style.borderRadius = "50%";
+            bubbles[i].style.transform = "scale(3)";
+        };
+    },
+    offset: 0,
+    once: false,
+});
 
