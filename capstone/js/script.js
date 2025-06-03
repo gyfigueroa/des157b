@@ -79,11 +79,14 @@ function formatTweet(tweet, json){
     
     if (json.quote){
         html +=    `<div class="quote">
-                        <div class="quote-user">
-                            <div class="quote-pfp" style="background-image:  url(${json.quote.pfpURL})"></div>
-                            <p class="name">${json.quote.displayname}</p>
-                            <p class="username">${json.quote.username}</p>
-                            <p class="username">• ${json.quote.date}</p>
+                        <div class="quote-content">
+                            <div class="quote-user">
+                                <div class="quote-pfp" style="background-image:  url(${json.quote.pfpURL})"></div>
+                                <p class="name">${json.quote.displayname}</p>
+                                <p class="username">${json.quote.username}</p>
+                                <p class="username">• ${json.quote.date}</p>
+                            </div>
+                            <p>${json.quote.content}</p>
                         </div>
                         <img class="quote-image" src="${json.quote.imgURL}">
                     </div>`;
@@ -198,12 +201,12 @@ enterView({
     selector: "#gorilla-card",
     enter: function(){
         bubbles.forEach(bubble => {
-            bubble.style.transform = "scale(1)";
+            bubble.style.opacity = 1;
         });
     },
     exit: function(){
         bubbles.forEach(bubble => {
-            bubble.style.transform = "scale(0)";
+            bubble.style.opacity = 0;
         });
     },
     offset: 0,
@@ -251,12 +254,13 @@ enterView({
                 bubbles[i].style.transform = "scale(10)";
             }
             else {
-                bubbles[i].style.transform = "scale(0)";
+                bubbles[i].style.opacity = 0;
             }
         };
     },
     exit: function(){
         for (let i = 0; i < bubbles.length; i++ ){
+            bubbles[i].style.opacity = 1;
             bubbles[i].style.borderRadius = "50%";
             bubbles[i].style.transform = "scale(3)";
         };
@@ -271,16 +275,19 @@ enterView({
         for (let i = 0; i < bubbles.length; i++ ){
             bubbles[i].style.borderRadius = "50%";
             bubbles[i].style.transform = "scale(1)";
+            bubbles[i].style.opacity = 0;
         };
     },
     exit: function(){
         for (let i = 0; i < bubbles.length; i++ ){
+            bubbles[i].style.opacity = 1;
             if(i == bubbles.length-1){
                 bubbles[i].style.borderRadius = "0";
                 bubbles[i].style.transform = "scale(10)";
             }
             else {
-                bubbles[i].style.transform = "scale(0)";
+                bubbles[i].style.transform = "scale(1)";
+                bubbles[i].style.opacity = 0;
             }
         };
     },
@@ -289,4 +296,53 @@ enterView({
 });
 
 
+enterView({
+    selector: "#event1",
+    enter: function(){
+        console.log("entered event1");
+        bubbles.forEach(bubble => {
+            bubble.style.opacity = 1;
+        });
+    },
+    exit: function(){
+        console.log("exited event1");
+        bubbles.forEach(bubble => {
+            bubble.style.opacity = 0;
+        });
+    },
+    offset: 0,
+    once: false,
+});
+
+enterView({
+    selector: "#event2",
+    enter: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(2)";
+        });
+    },
+    exit: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(1)";
+        });
+    },
+    offset: 0,
+    once: false,
+});
+
+enterView({
+    selector: "#event3",
+    enter: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(3)";
+        });
+    },
+    exit: function(){
+        bubbles.forEach(bubble => {
+            bubble.style.transform = "scale(2)";
+        });
+    },
+    offset: 0,
+    once: false,
+});
 
