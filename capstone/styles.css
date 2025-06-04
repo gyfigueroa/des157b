@@ -15,6 +15,10 @@ body {
     flex-direction: column;
     margin: auto;
     align-items: center;
+    gap: 16px;
+    height: 100%;
+    place-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -261,7 +265,7 @@ h1 {
 }
 
 
-.tweetAnchors {
+.anchors {
     padding-top: 100vh;
     padding-bottom: 100px;
     display: flex;
@@ -296,6 +300,7 @@ footer {
 section {
     padding: 2em 0;
     position: relative;
+    place-content: center;
 } 
 
 
@@ -578,7 +583,7 @@ img {
     width: 100%;
     height: 20vh;
     background: linear-gradient(0deg,rgba(118, 130, 145, 1) 0%, rgba(118, 130, 145, 0) 100%);
-    backdrop-filter: blur(20px);
+
 }
 #sec8{
     background: linear-gradient(0deg,rgba(38, 51, 74, 1) 0%, rgba(118, 130, 145, 1) 100%);
@@ -612,5 +617,171 @@ img {
 .pin-col > .tweet {
     position: relative;
     max-width: inherit;
+
+}
+
+#sec8 > .section-container > p {
+    padding: 64px 0;
+}
+
+/* Section 9 */
+
+#sec9{
+    min-height: 100vh;
+    background: linear-gradient(0deg,rgb(16, 18, 19) 0%, rgba(38, 51, 74, 1) 100%);
+}
+
+.table{
+    width: 80%;
+    height: 400px;
+    background-color: aqua;
+}
+
+
+/*  SECTION 10 */
+
+#sec10{
+    background-color: rebeccapurple;
+}
+
+#sec10anchors {
+    /* padding-top: 10vh; */
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+#sec10 > .section-container > .scrolly-side > h1 {
+    margin-bottom: 60vh;
+}
+
+.clipping{
+    width: 400px;
+    height: 100px;
+    box-shadow: -6px -6px 16px -16px rgba(69, 69, 69, 0.75);
+    position: absolute;
+    bottom: 0px;
+}
+
+
+#cl1{
+    bottom: 50%;
+    right: 0;
+    transform: rotate(10deg);
+}
+
+#cl2{
+    bottom: 40%;
+    left: 60;
+    transform: rotate(-5deg);
+}
+
+#cl3{
+    bottom: 25%;
+    left: 0px;
+    transform: rotate(-10deg);
+}
+
+
+#cl4{
+    bottom: 10%;
+    left: 0px;
+    transform: rotate(5deg);
+}
+
+/* SECTION 11 */
+
+#sec11 {
+    height: 100vh;
+    background-color: lightblue;
+}
+
+#sec11 > .section-container{
+    max-width: 50vw;
+}
+
+#sec11 > .section-container > .next {
+    position: absolute;
+    bottom: 0;
+}
+
+/* SECTION 12 */
+
+#sec12{
+    height: 200vh;
+}
+
+.tip{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 32px;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 6px -6px rgba(255,255,255,1) inset, -6px -6px 16px -16px rgba(69, 69, 69, 0.75) inset, 6px 6px 23px -7px rgba(0,0,0,0.5);
+}
+
+#tip1{
+    top: 5%;
+    left: 5%;
+}
+
+#tip2{
+    top: 80%;
+    left: 60%;
+}
+
+#tip3{
+    top: 20%;
+    left: 40%;
+}
+
+#tip4{
+    top: 80%;
+    left: 0%;
+}
+
+#tip5{
+    top: 60%;
+    left: 65%;
+}
+
+#tip6{
+    top: 0%;
+    left: 55%;
+}
+
+#tip7{
+    top: 25%;
+    left: 0%;
+}
+
+#tip8{
+    top: 60%;
+    left: 25%;
+}
+
+#tip9{
+    bottom: 50%;
+    right: 0%;
+}
+
+#tip10{
+    top: 45%;
+    left: 10%;
+}
+
+#sec12anchors {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    /* margin-top: 100vh; */
+    /* height: 200vh; */
 
 }
