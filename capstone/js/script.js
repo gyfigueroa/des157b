@@ -1,7 +1,7 @@
 console.log("js loaded");
 let globalData;
 async function getData(){
-        const myMoods = await fetch('./tweets.json');
+        const myMoods = await fetch('../data/tweets.json');
         const data = await myMoods.json();
         const tweets = data.tweets
         updateInterface(tweets);

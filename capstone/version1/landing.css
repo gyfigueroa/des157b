@@ -1,0 +1,18 @@
+#t1 {
+    top: 36%;
+    left: 71%;
+    transform: translate(-50%, -50%) rotate(3deg);
+}
+
+#t2 {
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%, -50%) rotate(358deg);
+}
+
+#t3 {
+    top: 74%;
+    left: 71%;
+    transform: translate(-50%, -50%) rotate(2deg);
+
+}
