@@ -13,332 +13,57 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bubble.css">
     <script src="https://unpkg.com/enter-view"></script>
-    <script src="bubble.js" defer></script>
-    <script src="js/script.js" defer></script>
+    <script src="../js/bubble.js" defer></script>
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
     <main>
-        <section id="sec1">        
-            <div class="scrolly">
-                <h1 class="headline gsap"><strong>Chat, are we cooked?</strong><br>How the rise of AI is<br>speedrunning humanity's<br>social decline.</h1>
+        <div id="trigger-offset"></div>
+        <section id="sec1"> 
+            <div class="tweet visible" id="t1" data-aos="fade-down-right" data-aos-anchor=".anchor1"></div>
+            <div class="tweet visible" data-aos="fade-right" data-aos-anchor=".anchor2"></div>
+            <div class="tweet visible" data-aos="fade-up-left" data-aos-anchor=".anchor3"></div>
+            <div class="tweet visible" data-aos="fade-down-right" data-aos-anchor=".anchor8"></div>
+            <div class="tweet visible" data-aos="fade-up-right" data-aos-anchor=".anchor5"></div>
+            <div class="tweet visible" data-aos="fade-left" data-aos-anchor=".anchor5"></div>
+            <div class="tweet visible" data-aos="fade-up-left" data-aos-anchor=".anchor6"></div>
+            <div class="tweet visible" data-aos="fade-up-right" data-aos-anchor=".anchor7"></div>
+            <div class="tweet visible" data-aos="fade-down-left" data-aos-anchor=".anchor4"></div>
 
+            <div class="section-container">
+                <div class="scrolly">
+                    <h1 class="headline gsap"><strong>Chat, are we cooked?</strong><br>How the rise of AI is<br>speedrunning humanity's<br>social decline.</h1>
+                    <div class="headline-filler"></div>
+                </div>
+                
+
+                <div class="next">
+                    <p>surprise,<br>it's already happening</p>
+                    <span style="color: #DA4207;">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </span>
+                </div>
                 <div class="anchors">
-                    <div class="anchor1 anchor"></div>
-                    <div class="anchor2 anchor"></div>
-                    <div class="anchor3 anchor"></div>
-                    <div class="anchor4 anchor"></div>
-                    <div class="anchor5 anchor"></div>
-                    <div class="anchor6 anchor"></div>
-                    <div class="anchor7 anchor"></div>
-                    <div class="anchor8 anchor"></div>
-                    <div class="anchor9 anchor"></div>
-                </div>
+                        <div class="anchor1 anchor"></div>
+                        <div class="anchor2 anchor"></div>
+                        <div class="anchor3 anchor"></div>
+                        <div class="anchor4 anchor"></div>
+                        <div class="anchor5 anchor"></div>
+                        <div class="anchor6 anchor"></div>
+                        <div class="anchor7 anchor"></div>
+                        <div class="anchor8 anchor"></div>
+                        <div class="anchor9 anchor"></div>
+                    </div>
             </div>
             
-            
-            
-            <div class="tweet visible" id="t1" data-aos="fade-down-right" data-aos-anchor=".anchor1">
-                <div class="pfp"></div>
-                <div class="content">                
-                    <div class="user">
-                        <p class="name">Name</p>
-                        <p class="username">@username</p>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
-
-                    <div class="quote">
-                        <div class="quote-user">
-                            <div class="quote-pfp"></div>
-                            <p class="name">Name</p>
-                            <p class="username">@username</p>
-                            <p class="useranme">date</p>
-                        </div>
-                        <img class="quote-image" src="images/GqXU8X6XMAAVdvb.png">
-                    </div>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <i class="fa-regular fa-comment"></i>
-                            <p>123</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-retweet"></i>
-                            <p>1.2K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>12.3K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <p>123K</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-            <div class="tweet visible" data-aos="fade-right" data-aos-anchor=".anchor2">
-                <div class="pfp"></div>
-                <div class="content">                
-                    <div class="user">
-                        <p class="name">Name</p>
-                        <p class="username">@username</p>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <i class="fa-regular fa-comment"></i>
-                            <p>123</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-retweet"></i>
-                            <p>1.2K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>12.3K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <p>123K</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tweet visible" data-aos="fade-up-left" data-aos-anchor=".anchor3">
-                <div class="pfp"></div>
-                <div class="content">                
-                    <div class="user">
-                        <p class="name">Name</p>
-                        <p class="username">@username</p>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <i class="fa-regular fa-comment"></i>
-                            <p>123</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-retweet"></i>
-                            <p>1.2K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>12.3K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <p>123K</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tweet visible" data-aos="fade-down-right" data-aos-anchor=".anchor8">
-                <div class="pfp"></div>
-                <div class="content">                
-                    <div class="user">
-                        <p class="name">Name</p>
-                        <p class="username">@username</p>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <i class="fa-regular fa-comment"></i>
-                            <p>123</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-retweet"></i>
-                            <p>1.2K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>12.3K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <p>123K</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tweet visible" data-aos="fade-up-right" data-aos-anchor=".anchor5">
-                <div class="pfp"></div>
-                <div class="content">                
-                    <div class="user">
-                        <p class="name">Name</p>
-                        <p class="username">@username</p>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <i class="fa-regular fa-comment"></i>
-                            <p>123</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-retweet"></i>
-                            <p>1.2K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>12.3K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <p>123K</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tweet visible" data-aos="fade-left" data-aos-anchor=".anchor5">
-                <div class="pfp"></div>
-                <div class="content">                
-                    <div class="user">
-                        <p class="name">Name</p>
-                        <p class="username">@username</p>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <i class="fa-regular fa-comment"></i>
-                            <p>123</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-retweet"></i>
-                            <p>1.2K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>12.3K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <p>123K</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tweet visible" data-aos="fade-up-left" data-aos-anchor=".anchor6">
-                <div class="pfp"></div>
-                <div class="content">                
-                    <div class="user">
-                        <p class="name">Name</p>
-                        <p class="username">@username</p>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <i class="fa-regular fa-comment"></i>
-                            <p>123</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-retweet"></i>
-                            <p>1.2K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>12.3K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <p>123K</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tweet visible" data-aos="fade-up-right" data-aos-anchor=".anchor7">
-                <div class="pfp"></div>
-                <div class="content">                
-                    <div class="user">
-                        <p class="name">Name</p>
-                        <p class="username">@username</p>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <i class="fa-regular fa-comment"></i>
-                            <p>123</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-retweet"></i>
-                            <p>1.2K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>12.3K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <p>123K</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tweet visible" data-aos="fade-down-left" data-aos-anchor=".anchor4">
-                <div class="pfp"></div>
-                <div class="content">                
-                    <div class="user">
-                        <p class="name">Name</p>
-                        <p class="username">@username</p>
-                    </div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
-
-                    <div class="stats">
-                        <div class="stat">
-                            <i class="fa-regular fa-comment"></i>
-                            <p>123</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-retweet"></i>
-                            <p>1.2K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-regular fa-heart"></i>
-                            <p>12.3K</p>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <p>123K</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             
     
-            <div class="next">
-                <p>surprise,<br>it's already happening</p>
-                <span style="color: #DA4207;">
-                    <i class="fa-solid fa-arrow-down"></i>
-                </span>
-            </div>
+            
 
         </section>
 
-        <section>
+        <section id="sec2">
             <div class="section-container">
                 <div class="scrolly-side">
                     <h1 class="sticky">Lorem ipsum dolor sit amet</h1>
@@ -720,8 +445,8 @@
         <a href="https://michalsnik.github.io/aos/">Animate On Scroll</a>
     </footer>
 
-    <script src="js/gsap.min.js"></script>
-    <script src="js/SplitText.min.js"></script>
+    <script src="../js/gsap.min.js"> console.log("gsap loaded");</script>
+    <script src="../js/SplitText.min.js"> console.log("gsap SplitText loaded");</script>
     <script>
         document.addEventListener("DOMContentLoaded", (event) => {
             gsap.registerPlugin(SplitText);
@@ -745,7 +470,10 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        //AOS.init();
+        AOS.init({
+            anchorPlacement: 'top-bottom',
+        });
     </script>
 </body>
 </html>
