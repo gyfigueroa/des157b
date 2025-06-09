@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bubble.css">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/enter-view"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/SplitText.min.js"></script>
     <script src="../js/bubble.js" defer></script>
     <script src="../js/script.js" defer></script>
 </head>
@@ -25,17 +29,16 @@
             <div class="tweet visible" data-aos="fade-up-left" data-aos-anchor=".anchor3"></div>
             <div class="tweet visible" data-aos="fade-down-right" data-aos-anchor=".anchor8"></div>
             <div class="tweet visible" data-aos="fade-up-right" data-aos-anchor=".anchor5"></div>
-            <div class="tweet visible" data-aos="fade-left" data-aos-anchor=".anchor5"></div>
+            <div class="tweet visible" data-aos="fade-left" data-aos-anchor=".anchor9"></div>
             <div class="tweet visible" data-aos="fade-up-left" data-aos-anchor=".anchor6"></div>
             <div class="tweet visible" data-aos="fade-up-right" data-aos-anchor=".anchor7"></div>
             <div class="tweet visible" data-aos="fade-down-left" data-aos-anchor=".anchor4"></div>
 
             <div class="section-container">
                 <div class="scrolly">
-                    <h1 class="headline gsap"><strong>Chat, are we cooked?</strong><br>How the rise of AI is<br>speedrunning humanity's<br>social decline.</h1>
+                    <h1 class="headline gsap"><strong>Chat, are we cooked?</strong><br>Gorillas used to run the planet. Now they’re in zoos. What happens when AI outsmarts us?</h1>
                     <div class="headline-filler"></div>
                 </div>
-                
 
                 <div class="next">
                     <p>surprise,<br>it's already happening</p>
@@ -43,17 +46,18 @@
                         <i class="fa-solid fa-arrow-down"></i>
                     </span>
                 </div>
+
                 <div class="anchors">
-                        <div class="anchor1 anchor"></div>
-                        <div class="anchor2 anchor"></div>
-                        <div class="anchor3 anchor"></div>
-                        <div class="anchor4 anchor"></div>
-                        <div class="anchor5 anchor"></div>
-                        <div class="anchor6 anchor"></div>
-                        <div class="anchor7 anchor"></div>
-                        <div class="anchor8 anchor"></div>
-                        <div class="anchor9 anchor"></div>
-                    </div>
+                    <div class="anchor1 anchor"></div>
+                    <div class="anchor2 anchor"></div>
+                    <div class="anchor3 anchor"></div>
+                    <div class="anchor4 anchor"></div>
+                    <div class="anchor5 anchor"></div>
+                    <div class="anchor6 anchor"></div>
+                    <div class="anchor7 anchor"></div>
+                    <div class="anchor8 anchor"></div>
+                    <div class="anchor9 anchor"></div>
+                </div>
             </div>
             
 
@@ -66,11 +70,12 @@
         <section id="sec2">
             <div class="section-container">
                 <div class="scrolly-side">
-                    <h1 class="sticky">Lorem ipsum dolor sit amet</h1>
+                    <h1 class="sticky white-text side-headline">What's the big idea?</h1>
                     <div class="column">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <span class="link">laborum.</span></p>
+                        <p class="white-text">It’s got something to do with gorillas. Bloomberg’s Hannah Fry discussed the gorilla problem in depth <span class="link"><a href="https://www.youtube.com/watch?v=ixgunKpy61s">here</a> <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i> </span>.</p>
                         <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="white-text">Basically, the gorilla problem is a concept popularized by Artifical Intelligence (AI) researcher Stuart Russel of whether humans can maintain their supremacy and autonomy in a world that includes machines with substantially greater intelligence.
+</p>
                     </div>
                 </div>    
             </div>
@@ -78,50 +83,71 @@
 
         <section id="sec3">
             <div class="section-container">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-                <div><span class="listNumber">1</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                <div><span class="listNumber">2</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                <div><span class="listNumber">3</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                <p class="attribution">Lorem ipsum dolor sit amet</p>
+                <h2 class="white-text">So… what actually makes an AI intelligent?</h2>
+                <div class="listContainer">
+                    <div class="listItem"><div class="listNumber">1</div> <p>Ability to learn and adapt</p></div>
+                    <div class="listItem"><div class="listNumber">2</div> <p>Ability to reason (requires a conceptual understanding of the world)</p></div>
+                    <div class="listItem"><div class="listNumber">3</div> <p>Interacts with environment to achieve goals</p></div>
+                </div>
+                
+                <p class="attribution"> - Hannah Fry for Bloomberg</p>
             </div>
         </section>
 
         <section>
             <div class="section-container">
                 <div class="scrolly">
-                    <h1 class="headline2 gsap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+                    <h1 class="headline2 gsap">Around 10 Million years ago, ancestors of the modern gorilla evolved into modern humans. Now, gorillas have no future beyond what humans allow.</h1>
 
                     <div class="headline2-bottom"></div>
                 </div>
                 
                 <div class="cards">
                     <div class="card" id="gorilla-card">
-                        <img src="" alt="" style="flex: 1;">
-                        <div class="card-details" style="flex: 1;">
-                            <p class="date">9 million years ago</p>
-                            <p class="name">Gorilla_</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="advantag">Lorem ipsum dolor sit amet</p>
+                        <div class="card-image" style="background-image: url('../images/mike-arney-rJ5vHo8gr2U-unsplash.jpg');"></div>
+                        <div class="card-details">
+                            <div class="date-range">
+                                <p class="date highlight">9M years ago</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <p class="date highlight">6M years ago</p>
+                                
+                            </div>
+                            
+                            <p class="card-name highlight">Gorillas</p>
+                            <p class="description highlight">Big. Hairy. Just chillin’.</p>
+                            <p class="advantage"><span class="edge highlight">Evolutionary edge</span> sophisticated social intelligence</p>
                         </div>
                     </div>
 
                     <div class="card" id="human-card">
-                        <img src="" alt="" style="flex: 1;">
-                        <div class="card-details" style="flex: 1;">
-                            <p class="date">9 million years ago</p>
-                            <p class="name">Gorilla_</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="advantag">Lorem ipsum dolor sit amet</p>
+                        <div class="card-image" style="background-image: url('../images/lachlan-dempsey-6VPEOdpFNAs-unsplash.jpg');"></div>
+                        <div class="card-details">
+                            <div class="date-range">
+                                <p class="date highlight">6M years ago</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <p class="date highlight">today</p>
+                                
+                            </div>
+                            
+                            <p class="card-name highlight">Humans</p>
+                            <p class="description highlight">Has anxiety. Invented toast.</p>
+                            <p class="advantage"><span class="edge highlight">Evolutionary edge</span> larger brain</p>
                         </div>
                     </div>
 
                     <div class="card" id="ai-card">
-                        <img src="" alt="" style="flex: 1;">
-                        <div class="card-details" style="flex: 1;">
-                            <p class="date">9 million years ago</p>
-                            <p class="name">Gorilla_</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="advantag">Lorem ipsum dolor sit amet</p>
+                        <div class="card-image" style="background-image: url('../images/ian-battaglia-9drS5E_Rguc-unsplash.jpg');"></div>
+                        <div class="card-details">
+                            <div class="date-range">
+                                <p class="date highlight">???</p>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <p class="date highlight">???</p>
+                                
+                            </div>
+                            
+                            <p class="card-name highlight">AI</p>
+                            <p class="description highlight">Knows everything. Still can’t draw hands.</p>
+                            <p class="advantage"><span class="edge highlight">Evolutionary edge</span> ??????</p>
                         </div>
                     </div>
                 </div>
@@ -131,11 +157,11 @@
         <section id="sec5">
             <div class="section-container">
                 <div class="scrolly-side">
-                    <h1 class="sticky">Lorem ipsum dolor <br><br>sit amet, consectetur adipiscing elit, <br><br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+                    <h1 class="sticky white-text side-headline">But hey, it’s just a tool.<br><br>Like a hammer. Or Google Docs.<br><br>Right?</h1>
                     <div class="column">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <span class="link">laborum.</span></p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h2 class="white-text">(Spoiler alert: not really)</h2>
+                        <br><br>
+                        <p class="white-text">Well, what do you define as a tool? In the past, all innovations in technology have been tools that a human being <span class="highlight">uses</span>. Think printing presses, motor vehicles, iPhones.</p>
                     </div>
                 </div>    
             </div>        
@@ -155,14 +181,13 @@
 
 
                     <div class="headline2-bottom"></div>
-
-                    <div class="next">
+                </div>
+                <div class="next">
                         <p>let's take a look</p>
                         <span style="color: #DA4207;">
                             <i class="fa-solid fa-arrow-down"></i>
                         </span>
                     </div>
-                </div>
             </div>
         </section>
 
@@ -241,17 +266,17 @@
             <div class="section-container">
                 <div class="scrolly">
                     <h1 class="headline2" >Not everyone is excited tho...</h1>
-
-
                     <div class="headline2-bottom"></div>
-
                     <div class="next">
-                        <p>AI doomscroll incoming...</p>
-                        <span style="color: #DA4207;">
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </span>
-                    </div>
+                    <p>AI doomscroll incoming...</p>
+                    <span style="color: #DA4207;">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </span>
                 </div>
+                </div>
+
+                
+
                 <div class="pinterest">
                     <div class="pin-col">
                         <div class="tweet visible" data-aos="fade-up-right">
@@ -295,16 +320,18 @@
         </section>
 
         <section id="sec10">
+            <img class="clipping" id="cl1" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor10">
+            <img class="clipping" id="cl2" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor11">
+            <img class="clipping" id="cl3" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor12">
+            <img class="clipping" id="cl4" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor13">
+
             <div class="section-container">
                 <div class="scrolly-side">
                     <h1 class="sticky">Lorem ipsum dolor sit amet</h1>
                     <div class="column">
-                        
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <span class="link">laborum.</span></p>
                         <br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        
-    
                     </div>
 
                 </div>   
@@ -314,11 +341,6 @@
                     <div class="anchor12 anchor" ></div>
                     <div class="anchor13 anchor" ></div>
                 </div>
-                
-                <img class="clipping" id="cl1" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor10">
-                <img class="clipping" id="cl2" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor11">
-                <img class="clipping" id="cl3" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor12">
-                <img class="clipping" id="cl4" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor13">
                 
             </div>
         </section>
@@ -445,35 +467,14 @@
         <a href="https://michalsnik.github.io/aos/">Animate On Scroll</a>
     </footer>
 
-    <script src="../js/gsap.min.js"> console.log("gsap loaded");</script>
-    <script src="../js/SplitText.min.js"> console.log("gsap SplitText loaded");</script>
-    <script>
-        document.addEventListener("DOMContentLoaded", (event) => {
-            gsap.registerPlugin(SplitText);
-
-            document.fonts.ready.then(()=> {
-                let split = SplitText.create(".gsap", {
-                    type: "words",
-                    mask: "words"
-                });
-
-                gsap.from(split.words, {
-                    y: 100,
-                    autoAlpha: 0,
-                    stagger: 0.05
-                })
-
-            });
-        });
     
-    </script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         //AOS.init();
         AOS.init({
             anchorPlacement: 'top-bottom',
         });
+        AOS.refresh;
+        window.addEventListener('load', AOS.refresh);
     </script>
 </body>
 </html>
