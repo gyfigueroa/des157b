@@ -26,8 +26,8 @@
             const data = await myMoods.json();
             const tweets = data.tweets
             updateInterface(tweets);
-            console.log(tweets);
-            console.log(tweets[1].URL);
+            //console.log(tweets);
+            //console.log(tweets[1].URL);
             globalData = data;
         }
 
@@ -145,7 +145,7 @@
         tweet.innerHTML = html;
         //<a class="wrapper" href="${json.URL}"></a>
         //</a>
-        console.log(json.displayname, json.imgURL);
+        /* console.log(json.displayname, json.imgURL); */
 
 
 
@@ -208,16 +208,19 @@
     }
 
     let bubbles = qs(".background").querySelectorAll(".main");
+    bubbles.forEach(bubble => {
+        bubble.style.opacity = 0;
+    });
 
     // toggling landing tweets
     enterView({
             selector: '#sec3',
             enter: function(el) {
-                console.log("enter", el);
+                //console.log("enter", el);
                 hideLandingTweets();
             },
             exit: function(el) {
-                console.log("exit", el);
+                //console.log("exit", el);
                 showLandingTweets();
                 AOS.refresh();
             },
@@ -325,7 +328,7 @@
         once: false,
     });
 
-    enterView({
+/*     enterView({
         selector: "#sec10",
         enter: function(){
             AOS.refresh;
@@ -333,19 +336,19 @@
         },
         offset: 0,
         once: true,
-    });
+    }); */
 
 
     enterView({
         selector: "#event1",
         enter: function(){
-            console.log("entered event1");
+            //console.log("entered event1");
             bubbles.forEach(bubble => {
                 bubble.style.opacity = 1;
             });
         },
         exit: function(){
-            console.log("exited event1");
+            //console.log("exited event1");
             bubbles.forEach(bubble => {
                 bubble.style.opacity = 0;
             });
@@ -385,6 +388,27 @@
         offset: 0,
         once: false,
     });
+
+    let scrollTimeout;
+    const indicator = document.getElementById('scroll-indicator');
+
+    function showIndicator() {
+    indicator.classList.add('show');
+    }
+
+    function hideIndicator() {
+    indicator.classList.remove('show');
+    }
+
+    function resetScrollTimer() {
+    hideIndicator();
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(showIndicator, 3000); // 5 seconds of no scroll
+    }
+
+    // Start tracking when page loads
+    window.addEventListener('scroll', resetScrollTimer);
+    window.addEventListener('load', resetScrollTimer);
 
 
 })();

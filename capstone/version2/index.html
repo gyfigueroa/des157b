@@ -19,35 +19,39 @@
     <script src="../js/SplitText.min.js"></script>
     <script src="../js/bubble.js" defer></script>
     <script src="../js/script.js" defer></script>
+    <script>
+    
+    </script>
 </head>
 <body>
+    <div id="scroll-indicator">Scroll ↓</div>
     <main>
         <div id="trigger-offset"></div>
         <section id="sec1"> 
-            <div class="tweet visible" id="t1" data-aos="fade-down-right" data-aos-anchor=".anchor1"></div>
-            <div class="tweet visible" data-aos="fade-right" data-aos-anchor=".anchor2"></div>
-            <div class="tweet visible" data-aos="fade-up-left" data-aos-anchor=".anchor3"></div>
-            <div class="tweet visible" data-aos="fade-down-right" data-aos-anchor=".anchor8"></div>
-            <div class="tweet visible" data-aos="fade-up-right" data-aos-anchor=".anchor5"></div>
-            <div class="tweet visible" data-aos="fade-left" data-aos-anchor=".anchor9"></div>
-            <div class="tweet visible" data-aos="fade-up-left" data-aos-anchor=".anchor6"></div>
-            <div class="tweet visible" data-aos="fade-up-right" data-aos-anchor=".anchor7"></div>
-            <div class="tweet visible" data-aos="fade-down-left" data-aos-anchor=".anchor4"></div>
+            <div class="tweet visible" id="t1" data-aos="zoom-in-down" data-aos-anchor=".anchor1"></div>
+            <div class="tweet visible" id="t2" data-aos="zoom-in-right" data-aos-anchor=".anchor2"></div>
+            <div class="tweet visible" id="t3" data-aos="zoom-in-left" data-aos-anchor=".anchor3"></div>
+            <div class="tweet visible" id="t4" data-aos="zoom-in-right" data-aos-anchor=".anchor8"></div>
+            <div class="tweet visible" id="t5" data-aos="zoom-in-right" data-aos-anchor=".anchor5"></div>
+            <div class="tweet visible" id="t6" data-aos="zoom-in-left" data-aos-anchor=".anchor9"></div>
+            <div class="tweet visible" id="t7" data-aos="zoom-in-left" data-aos-anchor=".anchor6"></div>
+            <div class="tweet visible" id="t8" data-aos="zoom-in-right" data-aos-anchor=".anchor7"></div>
+            <div class="tweet visible" id="t9" data-aos="zoom-in-left" data-aos-anchor=".anchor4"></div>
 
             <div class="section-container">
                 <div class="scrolly">
-                    <h1 class="headline gsap"><strong>Chat, are we cooked?</strong><br>Gorillas used to run the planet. Now they’re in zoos. What happens when AI outsmarts us?</h1>
+                    <h1 class="headline gsap" style="z-index: -1;"><strong>Chat, are we cooked?</strong><br>Gorillas used to run the planet. Now they’re in zoos. What happens when AI outsmarts us?</h1>
                     <div class="headline-filler"></div>
                 </div>
 
                 <div class="next">
-                    <p>surprise,<br>it's already happening</p>
+                    <p>keep scrolling</p>
                     <span style="color: #DA4207;">
                         <i class="fa-solid fa-arrow-down"></i>
                     </span>
                 </div>
 
-                <div class="anchors">
+                <div class="anchors" id="sec1anchors">
                     <div class="anchor1 anchor"></div>
                     <div class="anchor2 anchor"></div>
                     <div class="anchor3 anchor"></div>
@@ -72,7 +76,7 @@
                 <div class="scrolly-side">
                     <h1 class="sticky white-text side-headline">What's the big idea?</h1>
                     <div class="column">
-                        <p class="white-text">It’s got something to do with gorillas. Bloomberg’s Hannah Fry discussed the gorilla problem in depth <span class="link"><a href="https://www.youtube.com/watch?v=ixgunKpy61s">here</a> <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i> </span>.</p>
+                        <p class="white-text">It’s got something to do with gorillas. Bloomberg’s Hannah Fry discussed the gorilla problem in depth <span class="link highlight"><a href="https://www.youtube.com/watch?v=ixgunKpy61s">here <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></a></i> </span>.</p>
                         <br>
                         <p class="white-text">Basically, the gorilla problem is a concept popularized by Artifical Intelligence (AI) researcher Stuart Russel of whether humans can maintain their supremacy and autonomy in a world that includes machines with substantially greater intelligence.
 </p>
@@ -82,7 +86,7 @@
         </section>
 
         <section id="sec3">
-            <div class="section-container">
+            <div class="section-container white-text">
                 <h2 class="white-text">So… what actually makes an AI intelligent?</h2>
                 <div class="listContainer">
                     <div class="listItem"><div class="listNumber">1</div> <p>Ability to learn and adapt</p></div>
@@ -97,13 +101,13 @@
         <section>
             <div class="section-container">
                 <div class="scrolly">
-                    <h1 class="headline2 gsap">Around 10 Million years ago, ancestors of the modern gorilla evolved into modern humans. Now, gorillas have no future beyond what humans allow.</h1>
+                    <h1 class="headline2 gsap">Around 10 Million years ago, ancestors of the modern gorilla evolved into modern humans. Now, gorillas have <span class="highlight">no future</span> beyond what humans allow.</h1>
 
                     <div class="headline2-bottom"></div>
                 </div>
                 
                 <div class="cards">
-                    <div class="card" id="gorilla-card">
+                    <div class="card" id="gorilla-card" data-aos="zoom-in-up">
                         <div class="card-image" style="background-image: url('../images/mike-arney-rJ5vHo8gr2U-unsplash.jpg');"></div>
                         <div class="card-details">
                             <div class="date-range">
@@ -119,13 +123,13 @@
                         </div>
                     </div>
 
-                    <div class="card" id="human-card">
+                    <div class="card" id="human-card" data-aos="zoom-in-up">
                         <div class="card-image" style="background-image: url('../images/lachlan-dempsey-6VPEOdpFNAs-unsplash.jpg');"></div>
                         <div class="card-details">
                             <div class="date-range">
                                 <p class="date highlight">6M years ago</p>
                                 <i class="fa-solid fa-arrow-right"></i>
-                                <p class="date highlight">today</p>
+                                <p class="date highlight">present day</p>
                                 
                             </div>
                             
@@ -135,7 +139,7 @@
                         </div>
                     </div>
 
-                    <div class="card" id="ai-card">
+                    <div class="card" id="ai-card" data-aos="zoom-in-up">
                         <div class="card-image" style="background-image: url('../images/ian-battaglia-9drS5E_Rguc-unsplash.jpg');"></div>
                         <div class="card-details">
                             <div class="date-range">
@@ -171,19 +175,19 @@
 
 
         <section id="sec6">
-            <div class="section-container">
+            <div class="section-container white-text">
                 <div class="scrolly">
-                    <h1 class="headline" id="s6-1">Lorem ipsum dolor</h1>
-                    <h1 class="headline" id="s6-2">sit amet, consectetur</h1>
-                    <h1 class="headline" id="s6-3">Lorem ipsum dolor</h1>
-                    <h1 class="headline" id="s6-4">amet, consectetur adipiscing</h1>
-                    <h1 class="headline" id="s6-5">Right?</h1>
+                    <h1 class="headline" id="s6-1">But today,</h1>
+                    <h1 class="headline" id="s6-2">AI can create new ideas.</h1>
+                    <h1 class="headline" id="s6-3">By itself.</h1>
+                    <h1 class="headline" id="s6-4">Independently of humans.</h1>
+                    <h1 class="headline" id="s6-5">And fast.</h1>
 
 
                     <div class="headline2-bottom"></div>
                 </div>
                 <div class="next">
-                        <p>let's take a look</p>
+                        <p>let's take a look at AI's rapid growth</p>
                         <span style="color: #DA4207;">
                             <i class="fa-solid fa-arrow-down"></i>
                         </span>
@@ -194,7 +198,7 @@
         <section id="sec7">
             <div class="section-container">
                 <div class="scrolly">
-                    <h1 class="headline2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                    <h1 class="headline2">A brief history of Artificial Intelligence</h1>
 
 
                     <div class="headline2-bottom"></div>
@@ -202,59 +206,116 @@
                     
                 </div>
                 <div class="timeline">
-                        <div class="timeline-event" id="event1" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event with-image" id="event1" data-aos="zoom-in-up">
+                            <div class="event-image" style="background-image: url('../images/Alan-Turing.avif');">
+                            </div>
+                            <div class="event-content">
+                                <p class="card-name highlight year">1950</p>
+                                <p class="description">Alan Turing published "Computing Machinery and Intelligence," introducing the Turing test and opening the doors to what would be known as AI.</p>
+                            </div>
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+                        <div class="timeline-event" data-aos="zoom-in-up">
+                            <div class="event-content">
+                                <p class="card-name highlight year">1959</p>
+                                <p class="description">Arthur Samuel coined the term machine learning in a seminal paper explaining that the computer could be programmed to outplay its programmer.</p>
+                            </div>
+                            
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event" data-aos="zoom-in-up">
+                            <div class="event-content">
+                                <p class="card-name highlight year">1989</p>
+                                <p class="description">Yann LeCun, Yoshua Bengio and Patrick Haffner demonstrated how convolutional neural networks (CNNs) can be used to recognize handwritten characters, showing that neural networks could be applied to real-world problems.</p>
+                            </div>
+
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event with-image" data-aos="zoom-in-up">
+                            <div class="event-image" style="background-image: url('../images/241029-Ken-Jennings-ch-1136-787cc2.jpg');">
+                            </div>
+                            <div class="event-content">
+                                <p class="card-name highlight year">2006</p>
+                                <p class="description">IBM Watson originated with the initial goal of beating a human on the iconic quiz show Jeopardy! In 2011, the question-answering computer system defeated the show's all-time (human) champion, Ken Jennings.</p>
+                            </div>
+                            
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event with-image" data-aos="zoom-in-up">
+                            <div class="event-image" style="background-image: url('../images/siri-hp-orig.jpg');">
+                            </div>
+                            <div class="event-content">
+                                <p class="card-name highlight year">2011</p>
+                                <p class="description">Apple released Siri, a voice-powered personal assistant that can generate responses and take actions in response to voice requests.</p>
+                            </div>
+                            
                         </div>
-                        <div class="timeline-event" id="event2" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event" id="event2" data-aos="zoom-in-up">
+                            <div class="event-content">
+                                <p class="card-name highlight year">2014</p>
+                                <p class="description">Ian Goodfellow and colleagues invented generative adversarial networks, a class of machine learning frameworks used to generate photos, transform images and create deepfakes.</p>
+                            </div>
+                            
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event with-image" data-aos="zoom-in-up">
+                            <div class="event-image" style="background-image: url('../images/636565852197338918-AFP-AFP-12H63P.webp');">
+                            </div>
+                            <div class="event-content">
+                                <p class="card-name highlight year">2017</p>
+                                <p class="description">British physicist Stephen Hawking warned, "Unless we learn how to prepare for, and avoid, the potential risks, AI could be the worst event in the history of our civilization."</p>
+                            </div>
+                            
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event" data-aos="zoom-in-up">
+                            <div class="event-content">
+                                <p class="card-name highlight year">2020</p>
+                                <p class="description">The University of Oxford developed an AI test called Curial to rapidly identify COVID-19 in emergency room patients.</p>
+                            </div>
+                            
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event" data-aos="zoom-in-up">
+                            <div class="event-content">
+                                <p class="card-name highlight year">2021</p>
+                                <p class="description">OpenAI introduced the Dall-E multimodal AI system that can generate images from text prompts.</p>
+                            </div>
+                            
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event with-image" data-aos="zoom-in-up">
+                            <div class="event-image" style="background-image: url('../images/openai.jpg');">
+                            </div>
+                            <div class="event-content">
+                                <p class="card-name highlight year">2022</p>
+                                <p class="description">OpenAI released ChatGPT on Nov. 30 to provide a chat-based interface to its GPT-3.5 LLM, signaling the democratization of AI for the masses.</p>
+                            </div>
+                            
                         </div>
-                        <div class="timeline-event" id="event3" data-aos="fade-up">
-                            <img src="" alt="">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event with-image" id="event3" data-aos="zoom-in-up">
+                            <div class="event-image" style="background-image: url('../images/willsmith1.gif');">
+                            </div>
+                            <div class="event-content">
+                                <p class="card-name highlight year">2023</p>
+                                <p class="description">AI Will Smith eating spaghetti pasta. Generated with stable diffusion.</p>
+                            </div>
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <img src="" alt="">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event" data-aos="zoom-in-up">
+                            <div class="event-content">
+                                <p class="card-name highlight year">2024</p>
+                                <p class="description">Generative AI tools continued to evolve rapidly with improved model architectures, efficiency gains and better training data. Intuitive interfaces drove widespread adoption, even amid ongoing concerns about issues such as bias, energy consumption and job displacement.</p>
+                            </div>
+                            
                         </div>
-                        <div class="timeline-event" data-aos="fade-up">
-                            <p class="year">1950</p>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="timeline-event with-image" data-aos="zoom-in-up">
+                            <div class="event-image" style="background-image: url('../images/willsmith2.gif');">
+                            </div>
+                            <div class="event-content">
+                                <p class="card-name highlight year">2025</p>
+                                <p class="description">AI Will Smith eating spaghetti pasta. Generated with Google Veo 3.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-event" data-aos="zoom-in-up">
+                            <div class="event-content">
+                                <p class="card-name highlight year">2025+</p>
+                                <p class="description">Corporate spending on generative AI is expected to surpass $1 trillion in the coming years.</p>
+                            </div>
+                            
                         </div>
                     </div>
             </div>
@@ -265,10 +326,10 @@
         <section id="sec8">
             <div class="section-container">
                 <div class="scrolly">
-                    <h1 class="headline2" >Not everyone is excited tho...</h1>
+                    <h1 class="headline2 white-text" >Not everyone is excited though...</h1>
                     <div class="headline2-bottom"></div>
                     <div class="next">
-                    <p>AI doomscroll incoming...</p>
+                    <p class="white-text">AI doomscroll incoming...</p>
                     <span style="color: #DA4207;">
                         <i class="fa-solid fa-arrow-down"></i>
                     </span>
@@ -279,77 +340,135 @@
 
                 <div class="pinterest">
                     <div class="pin-col">
-                        <div class="tweet visible" data-aos="fade-up-right">
+                        <div class="tweet visible" data-aos="zoom-in-right">
                         </div>
-                        <div class="tweet visible" data-aos="fade-up-right">
+                        <div class="tweet visible" data-aos="zoom-in-right">
                         </div>
-                        <div class="tweet visible" data-aos="fade-up-right">
-                        </div>
-                    </div>
-
-                    <div class="pin-col">
-                        <div class="tweet visible" data-aos="fade-up">
-                        </div>
-                        <div class="tweet visible" data-aos="fade-up">
-                        </div>
-                        <div class="tweet visible" data-aos="fade-up">    
+                        <div class="tweet visible" data-aos="zoom-in-right">
                         </div>
                     </div>
 
                     <div class="pin-col">
-                        <div class="tweet visible" data-aos="fade-up-left">
+                        <div class="tweet visible" data-aos="zoom-in">
                         </div>
-                        <div class="tweet visible" data-aos="fade-up-left">
+                        <div class="tweet visible" data-aos="zoom-in">
                         </div>
-                        <div class="tweet visible" data-aos="fade-up-left">
+                        
+                    </div>
+
+                    <div class="pin-col">
+                        <div class="tweet visible" data-aos="zoom-in-left">    
                         </div>
+                        <div class="tweet visible" data-aos="zoom-in-left">
+                        </div>
+                        <div class="tweet visible" data-aos="zoom-in-left">
+                        </div>
+                        <div class="tweet visible" data-aos="zoom-in-left">
+                        </div>
+                        <div class="tweet visible" data-aos="zoom-in-left">
+                        </div>
+                        <div class="tweet visible" data-aos="zoom-in-left">
+                        </div>
+                        
 
                     </div>
                 </div>
-                <p>so i ai going to destroy humanity?</p>
+                <h1 class="white-text">So... is AI going to <span class="highlight">outsmart humanity</span>?</h1>
             </div>
         </section>
 
         <section id="sec9">
             <div class="section-container">
-                <h2>think about lorem ipsum dolor.</h2>
-                <div class="table">
+                <h1 class="white-text">Think about Hannah’s definition of intelligence from the start</h1>
+                <div class="table-container glass">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th></th> <!-- Empty top-left cell for alignment -->
+                            <th class="col-label highlight" id="cell1">GORILLA</th>
+                            <th class="col-label highlight">HUMAN</th>
+                            <th class="col-label highlight">AI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td class="row-label highlight" id="cell2">Ability to learn and adapt</td>
+                            <td class="highlight"><i class="fa-solid fa-square-check fa-3x" data-aos="zoom-in-up" data-aos-anchor=".cell1"></i></td>
+                            <td class="highlight"><i class="fa-solid fa-square-check fa-3x" data-aos="zoom-in-up" data-aos-anchor=".cell2"></i></td>
+                            <td class="highlight"><i class="fa-solid fa-square-check fa-3x" data-aos="zoom-in-up" data-aos-anchor=".cell3"></i></td>
+                            </tr>
+                            <tr>
+                            <td class="row-label highlight" id="cell3">Ability to reason</td>
+                            <td class="highlight"><i class="fa-solid fa-square-check fa-3x" data-aos="zoom-in-up" data-aos-anchor=".cell4"></i></td>
+                            <td class="highlight"><i class="fa-solid fa-square-check fa-3x" data-aos="zoom-in-up" data-aos-anchor=".cell5"></i></td>
+                            <td class="highlight"><i class="fa-solid fa-square-check fa-3x" data-aos="zoom-in-up" data-aos-anchor=".cell6"></i></td>
+                            </tr>
+                            <tr>
+                            <td class="row-label highlight" id="cell4">Interacts with environment to achieve goals</td>
+                            <td class="highlight"><i class="fa-solid fa-square-check fa-3x" data-aos="zoom-in-up" data-aos-anchor=".cell7"></i></td>
+                            <td class="highlight"><i class="fa-solid fa-square-check fa-3x" data-aos="zoom-in-up" data-aos-anchor=".cell8"></i></td>
+                            <td class="highlight"><i class="fa-solid fa-square-xmark fa-3x" data-aos="zoom-in-up" data-aos-anchor=".cell9"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="anchors" id="sec9anchors">
+                        <div class="cell1 anchor" ></div>
+                        <div class="cell2 anchor" ></div>
+                        <div class="cell3 anchor" ></div>
+                        <div class="cell4 anchor" ></div>
+                        <div class="cell5 anchor" ></div>
+                        <div class="cell6 anchor" ></div>
+                        <div class="cell7 anchor" ></div>
+                        <div class="cell8 anchor" ></div>
+                        <div class="cell1 anchor" ></div>
+                        <div class="cell9 anchor" ></div>
+                    </div>
                 </div>
+                <p class="white-text" data-aos="zoom-in-up">AI's lack of a body is it's biggest limitation</p>
+                
+                
             </div>
+
             
         </section>
 
         <section id="sec10">
-            <img class="clipping" id="cl1" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor10">
-            <img class="clipping" id="cl2" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor11">
-            <img class="clipping" id="cl3" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor12">
-            <img class="clipping" id="cl4" src="" alt="" data-aos="fade-up" data-aos-anchor=".anchor13">
 
             <div class="section-container">
+                <div class="section-container clipping-container">
+                    <img class="clipping" id="cl1" src="../images/error1.jpg" alt="" data-aos="zoom-in-up" data-aos-anchor=".anchor10">
+                    <img class="clipping" id="cl2" src="../images/error3.png" alt="" data-aos="zoom-in-up" data-aos-anchor=".anchor11">
+                    <img class="clipping" id="cl3" src="../images/error2.jpeg" alt="" data-aos="zoom-in-up" data-aos-anchor=".anchor12">
+                    <img class="clipping" id="cl4" src="../images/error4.png" alt="" data-aos="zoom-in-up" data-aos-anchor=".anchor13">
+                    <img class="clipping" id="cl5" src="../images/error6.png" alt="" data-aos="zoom-in-up" data-aos-anchor=".anchor14">
+                    <img class="clipping" id="cl6" src="../images/error5.png" alt="" data-aos="zoom-in-up" data-aos-anchor=".anchor15">
+
+                    <div class="anchors" id="sec10anchors">
+                        <div class="anchor10 anchor" ></div>
+                        <div class="anchor11 anchor" ></div>
+                        <div class="anchor12 anchor" ></div>
+                        <div class="anchor13 anchor" ></div>
+                        <div class="anchor14 anchor" ></div>
+                        <div class="anchor15 anchor" ></div>
+                    </div>
+                </div>
                 <div class="scrolly-side">
-                    <h1 class="sticky">Lorem ipsum dolor sit amet</h1>
+                    <h1 class="sticky white-text side-headline">Well, that's reassuring I guess...</h1>
                     <div class="column">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <span class="link">laborum.</span></p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="white-text">AI has a long way to go before it becomes the superintelligent entity corporate America is racing to create. It still makes <span class="highlight">plenty of errors</span> and suffers from  <span class="highlight">spreading misinformation</span>.</p>
                     </div>
 
                 </div>   
-                <div class="anchors" id="sec10anchors">
-                    <div class="anchor10 anchor" ></div>
-                    <div class="anchor11 anchor" ></div>
-                    <div class="anchor12 anchor" ></div>
-                    <div class="anchor13 anchor" ></div>
-                </div>
+                
                 
             </div>
         </section>
 
         <section id="sec11">
-            <div class="section-container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="section-container white-text">
+                <p>AI is here to stay but one thing’s for sure: it’s not going to overthrow humanity anytime soon. But it’s definitely not just a tool anymore either.</p>
                 <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>So… educate yourself. Don’t let it do your homework for you. And also don’t replace your therapist with it. At least not yet. </p>
                 <div class="next">
                     <p>silver linings ahead</p>
                     <span style="color: #DA4207;">
@@ -361,7 +480,7 @@
 
         <section id="sec12">
             <div class="section-container">
-                <h3 class="headline">lorem ipsum dolor</h3>
+                <h1 class="headline white-text">Actually helpful things AI can do.</h1>
                 
                 <div class="anchors" id="sec12anchors">
                     <div class="anchor12-1 anchor"></div>
@@ -377,45 +496,45 @@
                 </div>
             </div>
             
-            <div class="tip" id="tip1" data-aos="fade-up" data-aos-anchor=".anchor12-10">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="tip" id="tip1" data-aos="zoom-in-up" data-aos-anchor=".anchor12-10">
+                    <h3>Healthcare Diagnostics</h3>
+                    <p>Enhances early disease detection and treatment planning by analyzing complex medical data.</p>
                 </div>
-                <div class="tip" id="tip2" data-aos="fade-up" data-aos-anchor=".anchor12-2">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tip" id="tip2" data-aos="zoom-in-up" data-aos-anchor=".anchor12-2">
+                    <h3>Environmental Protection</h3>
+                    <p>Monitors environmental changes and predicts natural disasters to support conservation efforts.</p>
                 </div>
-                <div class="tip" id="tip3" data-aos="fade-up" data-aos-anchor=".anchor12-3">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tip" id="tip3" data-aos="zoom-in-up" data-aos-anchor=".anchor12-3">
+                    <h3>Personalized Education</h3>
+                    <p>Tailors learning experiences to individual needs, improving educational outcomes.</p>
                 </div>
-                <div class="tip" id="tip4" data-aos="fade-up" data-aos-anchor=".anchor12-4">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tip" id="tip4" data-aos="zoom-in-up" data-aos-anchor=".anchor12-4">
+                    <h3>Accessibility Tools</h3>
+                    <p>Assists individuals with disabilities through real-time transcription and other supportive technologies.</p>
                 </div>
-                <div class="tip" id="tip5" data-aos="fade-up" data-aos-anchor=".anchor12-5">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tip" id="tip5" data-aos="zoom-in-up" data-aos-anchor=".anchor12-5">
+                    <h3>Crisis Response</h3>
+                    <p>Analyzes data during emergencies to coordinate relief efforts and allocate resources efficiently.</p>
                 </div>
-                <div class="tip" id="tip6" data-aos="fade-up" data-aos-anchor=".anchor12-6">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tip" id="tip6" data-aos="zoom-in-up" data-aos-anchor=".anchor12-1">
+                    <h3>Wildlife Conservation</h3>
+                    <p>Processes data from sensors and cameras to monitor wildlife populations and combat poaching.</p>
                 </div>
-                <div class="tip" id="tip7" data-aos="fade-up" data-aos-anchor=".anchor12-7">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tip" id="tip7" data-aos="zoom-in-up" data-aos-anchor=".anchor12-7">
+                    <h3>Agricultural Optimization</h3>
+                    <p>Analyzes weather, soil, and crop data to enhance farming practices and sustainability.</p>
                 </div>
-                <div class="tip" id="tip8" data-aos="fade-up" data-aos-anchor=".anchor12-8">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tip" id="tip8" data-aos="zoom-in-up" data-aos-anchor=".anchor12-8">
+                    <h3>Disaster Prediction</h3>
+                    <p>Forecasts events like earthquakes and floods, providing early warnings to mitigate impact.</p>
                 </div>
-                <div class="tip" id="tip9" data-aos="fade-up" data-aos-anchor=".anchor12-8">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tip" id="tip9" data-aos="zoom-in-up" data-aos-anchor=".anchor12-8">
+                    <h3>Combating Human Trafficking</h3>
+                    <p>Analyzes online data to identify and prevent human trafficking activities.</p>
                 </div>
-                <div class="tip" id="tip10" data-aos="fade-up" data-aos-anchor=".anchor12-1">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="tip" id="tip10" data-aos="zoom-in-up" data-aos-anchor=".anchor12-6">
+                    <h3>Assisting the Visually Impaired</h3>
+                    <p> Describes surroundings and reads text aloud, enhancing independence for visually impaired individuals.</p>
                 </div>
         </section>
     </main>
@@ -462,11 +581,6 @@
         </div>
     </div>
 
-    <footer>
-        <a href="https://gsap.com">GSAP</a>
-        <a href="https://michalsnik.github.io/aos/">Animate On Scroll</a>
-    </footer>
-
     
     <script>
         //AOS.init();
@@ -474,7 +588,14 @@
             anchorPlacement: 'top-bottom',
         });
         AOS.refresh;
-        window.addEventListener('load', AOS.refresh);
+
+        window.addEventListener('load', reloadAOS);
+
+        function reloadAOS(){
+            console.log('window loaded');
+            AOS.refresh;
+            console.log('AOS refreshed');
+        }
     </script>
 </body>
 </html>
