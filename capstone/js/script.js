@@ -410,6 +410,17 @@
     window.addEventListener('scroll', resetScrollTimer);
     window.addEventListener('load', resetScrollTimer);
 
+    let overlayButton = qs(".overlay-button")
+
+    qs(".overlay-button").addEventListener('click', function(e){
+        qs(".overlay").classList.add("hidden");
+        console.log("button clicked");
+    });
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+      window.scrollTo(0, 0);
+    });
+
 
 })();
 
